@@ -75,3 +75,87 @@ This project is licensed under the MIT License.
 ---
 
 Happy renting with Mushroom Motors!
+
+
+INCREMENTAL PROCESS MODEL FOR MUSHROOM MOTORS CAR RENTAL SYSTEM
+-------------------------------------------------------------
+Overview of the Model
+---------------------
+The Incremental Process Model divides the development of the system into smaller, manageable builds (increments). Each increment delivers a functional part of the system, progressively enhancing features until the complete application is ready.
+This model is ideal for your Mushroom Motors Rental System because it allows early deployment of core features (vehicle catalogue and booking) while gradually adding advanced functionalities (authentication, admin tools, etc.).
+
+Increments
+
+Increment 1: Core Vehicle Catalogue & Backend Setup
+
+Frontend:
+  •	Set up React project with Vite.
+  •	Implement Vehicle Catalogue UI (vehicle listing and filtering).
+  •	Basic styling with Tailwind CSS.
+Backend:
+  •	Build Flask API for fetching vehicle data.
+  •	Integrate PostgreSQL database schema for Vehicle model.
+  •	Provide API endpoint: GET /vehicles (fetch all vehicles).
+Output:
+  •	Users can browse available vehicles.
+  •	Backend serves vehicle data via API.
+
+Increment 2: Booking System & Authentication
+
+Frontend:
+  •	Implement Online Booking form with date selection.
+  •	Add user authentication (login/register).
+  •	Connect frontend booking form to backend API.
+Backend:
+  •	Create User and Booking models.
+  •	Implement JWT-based authentication.
+  •	Create booking API endpoints (POST /bookings, GET /bookings/:userId).
+Output:
+  •	Users can register, log in, and book vehicles.
+  •	Bookings are stored securely in the backend.
+
+Increment 3: Booking Management Dashboard
+
+Frontend:
+  •	Add dashboard for authenticated users to view, edit, or cancel bookings.
+  •	Implement protected routes using React Router.
+Backend:
+  •	Expand API with booking management endpoints (PUT /bookings/:id, DELETE /bookings/:id).
+  •	Enforce role-based access (user vs. admin).
+Output:
+  •	Users can manage their reservations.
+  •	Authentication ensures secure access to personal bookings.
+
+Increment 4: Admin Tools
+
+Frontend:
+  •	Add admin interface to manage vehicles (add/edit/remove vehicles).
+  •	Integrate admin booking review tools.
+Backend:
+  •	Implement admin endpoints for managing inventory and viewing all bookings.
+  •	Secure routes with admin-only permissions.
+Output:
+  •	Admins can oversee the fleet and bookings.
+  •	Backend enforces role-based permissions.
+
+Increment 5: Performance, QA, and Deployment
+
+Frontend:
+  •	Optimize app with code splitting and lazy loading.
+  •	Implement ESLint for code quality.
+  •	Finalize responsive design.
+Backend:
+  •	Implement rate limiting and security best practices (Flask middlewares).
+  •	Optimize database queries and indexing.
+  Deployment:
+  •	Host frontend using (., Vercel /Netlify) and backend using (., Railway/Heroku).
+  •	Set up CI/CD pipeline.
+Output:
+  •	Fully functional, optimized, and deployed system.
+
+Technology Stack
+  •	Frontend: React, Vite, React Router, Tailwind CSS
+  •	Backend: Flask (Python), PostgreSQL, JWT Authentication
+  •	API Communication: Axios
+  •	Quality Assurance: ESLint
+  •	Deployment: Netlify/Vercel (Frontend), Railway/Heroku (Backend)
