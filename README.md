@@ -26,8 +26,6 @@ This application serves as the customer-facing portal for Mushroom Motors, a veh
 
 ## Getting Started
 
-- **Clone the repository:**  
-  `https://github.com/festus-sulumeti/mushroom-motors-rental-frontend.git`
 - **Install dependencies:**  
   `npm install` or `yarn install`
 - **Start development server:**  
