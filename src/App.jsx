@@ -8,7 +8,9 @@ import AccountSettings from './components/user-dashboard/AccountSettings';
 import AdminDashboardHome from './components/admin-dashboard/AdminDashboardHome';
 import ManageUsers from './components/admin-dashboard/ManageUsers';
 import ManageCars from './components/admin-dashboard/ManageCars';
-
+import ManageRentals from './components/admin-dashboard/ManageRentals';
+import MyRentals from './components/user-dashboard/MyRentals';
+import BrowseCars from './components/user-dashboard/BrowseCars';
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         <Route path="/admin-dashboard" element={<AdminDashboardHome />} />
         <Route path="/admin/users" element={<ManageUsers />} />
         <Route path="/admin/manage-cars" element={<ManageCars />} />
+        <Route path="/admin/rented-cars" element={<ManageRentals />} />
+        <Route path="/user/my-rentals" element={<MyRentals />} />
+        <Route path="/user/browse-cars" element={<BrowseCars />} />
       </Routes>
     </Router>
   );
